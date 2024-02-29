@@ -111,19 +111,21 @@ hr {
 .rede-sociais {
     background-color: white;
     color: black;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .rede-sociais > ul {
     list-style: none;
     justify-content: center;
     display: flex;
-    padding: 7px;
+    padding: 7.4px;
 }
 
 .rede-sociais > ul > li {
     text-align: center;
     padding-right: 20px;
+    height: 30px;
+    width: 30px;
 }
 
 .resumo {
