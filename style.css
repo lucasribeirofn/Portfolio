@@ -74,23 +74,28 @@ main {
     width: 360px;
     height: 461px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: -120px;
-    box-shadow: 1px 6px 5px rgba(230, 218, 206, 0.397);
+    box-shadow: 1px 3px 5px rgba(230, 218, 206, 0.397);
 }
 
 .box-perfil > p {
-    padding: 30px;
     font-size: 1.3em;
+}
+
+.img-perfil {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    align-self: center;
+    margin-top: 30px;
 }
 
 #nome {
     text-transform: uppercase;
     font-weight: bold;
-}
-
-#funcao {
-    text-transform: uppercase;
-    color: rgba(51, 28, 6, 1);
 }
 
 hr {
@@ -99,19 +104,15 @@ hr {
     border-color: rgba(51, 28, 6, 1);
 }
 
-.img-perfil {
-    background-color: aqua;
-    border-radius: 50%;
-    width: 170px;
-    height: 170px;
-    margin-top: 40px;
-    margin-bottom: 10px;
+#funcao {
+    text-transform: uppercase;
+    color: rgba(51, 28, 6, 1);
 }
+
 
 .rede-sociais {
     background-color: white;
     color: black;
-    margin-top: 25px;
 }
 
 .rede-sociais > ul {
