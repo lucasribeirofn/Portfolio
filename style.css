@@ -4,11 +4,6 @@
 * {
     margin: 0px;
     padding: 0px;
-}
-
-html, body {
-    height: 100vh;
-    width: 100vw;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
@@ -17,7 +12,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 10px 4px 5px rgba(230, 218, 206, 0.397);
+    box-shadow: 0px 4px 5px rgba(230, 218, 206, 0.397);
 }
 
 nav > ul {
@@ -52,37 +47,36 @@ a {
     font-size: 1em;
 }
 
-main {
+.container {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    margin-top: 90px;
-    margin-bottom: 50px;
-}
+    margin-top: 170px;
+    }
 
-.box {
+.box-design {
     background-color: rgb(230, 218, 206);
-    width: 970px;
-    height: 900px;
+    padding: 150px 0px;
+    width: 40%;
     display: flex;
-    align-items: center;
-    justify-content: end;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .box-perfil {
     background-color: rgba(244, 236, 230, 1);
+    height: 450px;
     width: 360px;
-    height: 461px;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: -120px;
+    margin-right: -170px;
     box-shadow: 1px 3px 5px rgba(230, 218, 206, 0.397);
 }
 
 .box-perfil > p {
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 .img-perfil {
@@ -96,6 +90,8 @@ main {
 #nome {
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 1.3em;
+    text-align: center;
 }
 
 hr {
@@ -105,13 +101,17 @@ hr {
 }
 
 #funcao {
+    font-size: 1.2em;
     text-transform: uppercase;
     color: rgba(51, 28, 6, 1);
+    text-align: center;
+    padding: 0px 20px;
 }
 
 
 .rede-sociais {
     background-color: white;
+    width: 100%;
     color: black;
 }
 
@@ -129,10 +129,25 @@ hr {
     width: 30px;
 }
 
+#instagram {
+    width: 30px;
+    height: 30px;
+}
+
+#github {
+    width: 30px;
+    height: 30px;
+}
+
+#linkedin {
+    width: 30px;
+    height: 30px;
+}
+
+
 .resumo {
-    margin: 40px;
     height: 400px;
-    margin-left: 150px;
+    margin-left: 200px;
     text-align: start;
 }
 
@@ -173,27 +188,12 @@ hr {
 
 .texto-resumo > p {
     text-align: justify;
-    max-width: 400px;
-}
-
-#instagram {
-    width: 30px;
-    height: 30px;
-}
-
-#github {
-    width: 30px;
-    height: 30px;
-}
-
-#linkedin {
-    width: 30px;
-    height: 30px;
+    width: 400px;
 }
 
 .tech-stack {
-    margin-top: 200px;
-    margin-left: -90px;
+    margin-top: 130px;
+    margin-left: -100px;
     font-weight: bold;
     display: flex;
     flex-direction: row;
@@ -203,4 +203,19 @@ hr {
 .tech-stack img {
     width: 40px;
     margin-left: 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 100px 40px;
+}
+
+footer > p {
+    padding-left: 30px;
+}
+
+#telefone, #email {
+    font-weight: bold;
 }
