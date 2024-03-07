@@ -28,7 +28,7 @@ nav > ul {
     font-size: 0.9em;
 }
 
-nav > a >  h1 {
+nav > a {
     margin: 20px;
     margin-left: 50px;
     margin-top: 30px;
@@ -52,7 +52,8 @@ a {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 170px;
+    width: 100%;
+    min-height: 90vh;
     }
 
 .box-design {
@@ -67,7 +68,7 @@ a {
 .box-perfil {
     background-color: rgba(244, 236, 230, 1);
     height: 450px;
-    width: 360px;
+    max-width: 360px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -146,9 +147,9 @@ hr {
 
 
 .resumo {
-    height: 400px;
     margin-left: 200px;
     text-align: start;
+    margin-right: 10px;
 }
 
 .resumo h1 {
@@ -188,12 +189,11 @@ hr {
 
 .texto-resumo > p {
     text-align: justify;
-    width: 400px;
+    max-width: 400px;
 }
 
 .tech-stack {
-    margin-top: 130px;
-    margin-left: -100px;
+    margin-top: 20px;
     font-weight: bold;
     display: flex;
     flex-direction: row;
@@ -205,17 +205,58 @@ hr {
     margin-left: 5px;
 }
 
+#telefone, #email {
+    font-weight: bold;
+}
+
+.titulo > h1 {
+    background-color: rgb(230, 218, 206);
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    margin-top: 46px;
+    margin-bottom: 50px;
+    font-size: 1.8em;
+    box-shadow: 1px 2px 5px rgba(112, 62, 12, 0.356);
+}
+
+.container-projetos {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.box-projeto1, .box-projeto3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.box-projeto2, .box-projeto4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;   
+}
+
+#projeto1, #projeto2, #projeto3, #projeto4 {
+    background-color: rgba(244, 236, 230, 1);
+    display: flex;
+    width: 500px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 2px 5px rgba(112, 62, 12, 0.356);
+}
+
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    margin: 100px 40px;
+    justify-content: center;
 }
 
 footer > p {
     padding-left: 30px;
-}
-
-#telefone, #email {
-    font-weight: bold;
+    margin: 70px 40px 40px 0px;
 }
