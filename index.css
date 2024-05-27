@@ -38,6 +38,10 @@ nav > a {
     font-weight: normal;
 }
 
+nav ul a:hover {
+    color: rgb(51, 4, 223);
+}
+
 .strong {
     font-weight: bold;
 }
@@ -249,15 +253,4 @@ hr {
     justify-content: space-around;
     align-items: center;
     box-shadow: 1px 2px 5px rgba(112, 62, 12, 0.356);
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-footer > p {
-    padding-left: 30px;
-    margin: 70px 40px 40px 0px;
 }
